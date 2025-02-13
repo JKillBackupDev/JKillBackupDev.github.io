@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+	--font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-pixelscript: "pf-pixelscript", sans-serif;
+	--font-videotext: "pf-videotext", sans-serif;
+}
+
+/* PREVENTING OVERSCROLL */
+html {
+	overflow: hidden;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	overflow: auto;
+	overflow-x: hidden;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+/* END PREVENTING OVERSCROLL */
